@@ -3,8 +3,94 @@
   <head>
     <meta charset="utf-8">
     <title>enrGxs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container">
+      <h1>System Design</h1>
+      <form class="" action="index.html" method="post">
+        <legend>Requirement Summary</legend>
+        <fieldset class="form-group">
+          <label for="system_voltage">System Voltage</label>
+          <input type="text" class="form-control" id="system_voltage" value="46">
+        </fieldset>
+        <legend>PV Production</legend>
+        <fieldset class="form-group">
+          <label for="sun_hours">Average Sun Hours</label>
+          <input type="text" class="form-control" id="sun_hours" value="4.8">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="num_panels">Number of Panels / String</label>
+          <input type="text" class="form-control" id="num_panels" value="3">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="num_strings">Number of Strings</label>
+          <input type="text" class="form-control" id="num_strings" value="6">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="num_arrays">Number of Arrays</label>
+          <input type="text" class="form-control" id="num_arrays" value="6">
+        </fieldset>
+        <legend>Battery Charger Production</legend>
+        <fieldset class="form-group">
+          <label for="avail_at_db">Current Available at DB</label>
+          <input type="text" class="form-control" id="avail_at_db" value="63">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="avail_at_db">Current Available at DB</label>
+          <input type="text" class="form-control" id="avail_at_db" value="63">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="inverter_power">Inverter Power (VA)</label>
+          <input type="text" class="form-control" id="inverter_power" value="3000">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="power_factor">Power Factor</label>
+          <input type="text" class="form-control" id="power_factor" value="0.9">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="charger_voltage">Charger Voltage</label>
+          <input type="text" class="form-control" id="charger_voltage" value="48">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="num_inverter_chargers">Number of Inverter-Chargers</label>
+          <input type="text" class="form-control" id="num_inverter_chargers">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="max_charger_current">Max Charger Current (Don't Exceed 10% of Battery Bank, and max available DC charging current)</label>
+          <input type="text" class="form-control" id="max_charger_current" value="42">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="daily_charging_hrs">Daily Charging Hours</label>
+          <input type="text" class="form-control" id="daily_charging_hrs" value="8">
+        </fieldset>
+
+        <legend>Battery Bank Sizing</legend>
+        <fieldset class="form-group">
+          <label for="days_of_autonomy">Days of Autonomy</label>
+          <input type="text" class="form-control" id="days_of_autonomy" value="0.5">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="max_dod">Maximum Depth of Discharge (DoD)%</label>
+          <input type="text" class="form-control" id="max_dod" value="50">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="ind_batt_voltage">Individual Battery Voltage</label>
+          <input type="text" class="form-control" id="ind_batt_voltage" value="2">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="ind_batt_size">Individual Battery Size</label>
+          <input type="text" class="form-control" id="ind_batt_size">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="batt_c_rating">Battery C-Rating</label>
+          <input type="text" class="form-control" id="batt_c_rating" value="10">
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
   </body>
   <script src="jquery-2.2.3.min.js"></script>

@@ -1,4 +1,4 @@
-console.log('hello world');
+
 
 // Get a database reference to our posts
 var ref = new Firebase("https://sizzling-heat-9963.firebaseio.com/users/user1");
